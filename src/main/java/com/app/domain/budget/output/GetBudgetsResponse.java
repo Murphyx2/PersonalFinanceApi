@@ -2,7 +2,7 @@ package com.app.domain.budget.output;
 
 import java.util.List;
 
-import com.app.personalfinancesservice.domain.budget.Budget;
+import com.app.domain.budget.dto.BudgetDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,9 +14,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class GetBudgetsResponse {
 
-	private List<Budget> budgets;
+	private List<BudgetDTO> budgets;
 
-	public GetBudgetsResponse withBudgets(List<Budget> budgets) {
+	public GetBudgetsResponse withBudgets(List<BudgetDTO> budgets) {
 		this.setBudgets(budgets);
 		return this;
 	}

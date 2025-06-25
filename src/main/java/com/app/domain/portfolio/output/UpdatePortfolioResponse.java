@@ -1,6 +1,6 @@
 package com.app.domain.portfolio.output;
 
-import com.app.personalfinancesservice.domain.portfolio.Portfolio;
+import com.app.domain.portfolio.dto.PortfolioDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,9 +12,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class UpdatePortfolioResponse {
 
-	private Portfolio portfolio;
+	private PortfolioDTO portfolio;
 
-	public UpdatePortfolioResponse withPortfolio(Portfolio portfolio) {
+	public UpdatePortfolioResponse withPortfolio(PortfolioDTO portfolio) {
 		this.setPortfolio(portfolio);
 		return this;
 	}

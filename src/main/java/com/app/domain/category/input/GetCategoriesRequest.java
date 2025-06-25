@@ -1,8 +1,8 @@
 package com.app.domain.category.input;
 
-import com.app.personalfinancesservice.domain.filter.SortBy;
-import com.app.personalfinancesservice.domain.filter.SortDirection;
-import com.app.personalfinancesservice.domain.transaction.TransactionType;
+import com.app.domain.transaction.TransactionType;
+import com.app.filter.SortBy;
+import com.app.filter.SortDirection;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

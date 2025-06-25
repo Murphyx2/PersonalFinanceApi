@@ -2,7 +2,7 @@ package com.app.domain.categoryplanner.output;
 
 import java.util.List;
 
-import com.app.personalfinancesservice.domain.categoryplanner.CategoryPlanner;
+import com.app.domain.categoryplanner.dto.CategoryPlannerDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,9 +12,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class GetListCategoryPlannerResponse {
 
-	private List<CategoryPlanner> categoryPlanners;
+	private List<CategoryPlannerDTO> categoryPlanners;
 
-	public GetListCategoryPlannerResponse withCategoryPlanners(List<CategoryPlanner> categoryPlanners) {
+	public GetListCategoryPlannerResponse withCategoryPlanners(List<CategoryPlannerDTO> categoryPlanners) {
 		this.setCategoryPlanners(categoryPlanners);
 		return this;
 	}

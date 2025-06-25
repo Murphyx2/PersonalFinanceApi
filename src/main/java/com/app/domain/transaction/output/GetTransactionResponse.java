@@ -3,7 +3,6 @@ package com.app.domain.transaction.output;
 import java.io.Serial;
 import java.io.Serializable;
 
-import com.app.domain.transaction.Transaction;
 import com.app.domain.transaction.dto.TransactionDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

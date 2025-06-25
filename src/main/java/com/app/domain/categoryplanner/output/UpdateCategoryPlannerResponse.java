@@ -1,6 +1,6 @@
 package com.app.domain.categoryplanner.output;
 
-import com.app.personalfinancesservice.domain.categoryplanner.CategoryPlanner;
+import com.app.domain.categoryplanner.dto.CategoryPlannerDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,9 +10,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class UpdateCategoryPlannerResponse {
 
-	private CategoryPlanner categoryPlanner;
+	private CategoryPlannerDTO categoryPlanner;
 
-	public UpdateCategoryPlannerResponse withCategoryPlanner(CategoryPlanner categoryPlanner) {
+	public UpdateCategoryPlannerResponse withCategoryPlanner(CategoryPlannerDTO categoryPlanner) {
 		this.setCategoryPlanner(categoryPlanner);
 		return this;
 	}

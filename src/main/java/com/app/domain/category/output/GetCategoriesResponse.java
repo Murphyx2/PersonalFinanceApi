@@ -2,7 +2,7 @@ package com.app.domain.category.output;
 
 import java.util.List;
 
-import com.app.personalfinancesservice.domain.category.Category;
+import com.app.domain.category.dto.CategoryDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,9 +12,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class GetCategoriesResponse {
 
-	private List<Category> categories;
+	private List<CategoryDTO> categories;
 
-	public GetCategoriesResponse withCategories(List<Category> category) {
+	public GetCategoriesResponse withCategories(List<CategoryDTO> category) {
 		this.setCategories(category);
 		return this;
 	}

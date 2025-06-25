@@ -2,7 +2,7 @@ package com.app.domain.portfolio.output;
 
 import java.util.List;
 
-import com.app.personalfinancesservice.domain.portfolio.Portfolio;
+import com.app.domain.portfolio.dto.PortfolioDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,9 +12,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class GetAllPortfolioResponse {
 
-	private List<Portfolio> portfolios;
+	private List<PortfolioDTO> portfolios;
 
-	public GetAllPortfolioResponse withPortfolios(List<Portfolio> portfolios) {
+	public GetAllPortfolioResponse withPortfolios(List<PortfolioDTO> portfolios) {
 		this.setPortfolios(portfolios);
 		return this;
 	}

@@ -1,6 +1,6 @@
 package com.app.domain.budget.output;
 
-import com.app.personalfinancesservice.domain.budget.Budget;
+import com.app.domain.budget.dto.BudgetDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,9 +12,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class CreateBudgetResponse {
 
-	private Budget budget;
+	private BudgetDTO budget;
 
-	public CreateBudgetResponse withBudget(Budget budget) {
+	public CreateBudgetResponse withBudget(BudgetDTO budget) {
 		this.setBudget(budget);
 		return this;
 	}

@@ -1,6 +1,6 @@
 package com.app.domain.category.input;
 
-import com.app.personalfinancesservice.domain.transaction.TransactionType;
+import com.app.domain.transaction.TransactionType;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;

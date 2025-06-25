@@ -1,7 +1,7 @@
 package com.app.domain.budget.input;
 
-import com.app.personalfinancesservice.domain.filter.SortBy;
-import com.app.personalfinancesservice.domain.filter.SortDirection;
+import com.app.filter.SortBy;
+import com.app.filter.SortDirection;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

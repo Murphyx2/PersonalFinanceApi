@@ -1,6 +1,6 @@
 package com.app.domain.category.output;
 
-import com.app.personalfinancesservice.domain.category.Category;
+import com.app.domain.category.dto.CategoryDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,9 +10,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class UpdateCategoryResponse {
 
-	private Category category;
+	private CategoryDTO category;
 
-	public UpdateCategoryResponse withCategory(Category category) {
+	public UpdateCategoryResponse withCategory(CategoryDTO category) {
 		this.setCategory(category);
 		return this;
 	}
