@@ -8,7 +8,7 @@ public interface BudgetRepositoryFacade {
 
 	boolean budgetExists(String id, String userId);
 
-	boolean deleteBudget(String id, String userId);
+	void deleteBudget(String id, String userId);
 
 	Budget getBudgetByIdAndUserId(String id, String userId);
 
