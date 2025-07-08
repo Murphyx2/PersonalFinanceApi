@@ -29,6 +29,15 @@
         </dependencies>
     </dependencyManagement>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Personal finance Api repo</name>
+            <url>https://maven.pkg.github.com/Murphyx2/PersonalFinanceApi</url>
+        </repository>
+    </distributionManagement>
+
+
     <dependencies>
         <!-- Spring Core for annotations (e.g., @Service, @Component) -->
         <dependency>

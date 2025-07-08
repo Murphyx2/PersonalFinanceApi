@@ -27,11 +27,7 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       # Step 4: Build with Maven
-      - name: Build with Maven
-        run: mvn clean package -DSkipTests=false
-      # Step 5: Upload the JAR File
-      - name: Upload JAR artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: PersonalFinanceApi
-          path: target/*.jar
+      - name: Publish to GitHub Packages
+        run: mvn deploy --settings .github/settings.xml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
