@@ -2,6 +2,7 @@ package com.personalfinance.api.facade;
 
 import java.util.List;
 
+import com.personalfinance.api.domain.portfolio.Portfolio;
 import com.personalfinance.api.domain.portfolio.dto.PortfolioDTO;
 
 public interface PortfolioRepositoryFacade {
@@ -14,7 +15,7 @@ public interface PortfolioRepositoryFacade {
 
 	PortfolioDTO getPortfolioByIdAndUserId(String id, String userId);
 
-	PortfolioDTO savePortfolio(PortfolioDTO portfolio);
+	PortfolioDTO savePortfolio(Portfolio portfolio);
 
 	PortfolioDTO updatePortfolio(PortfolioDTO portfolio);
 }
