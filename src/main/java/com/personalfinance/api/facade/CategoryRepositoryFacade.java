@@ -3,6 +3,7 @@ package com.personalfinance.api.facade;
 import java.util.List;
 
 import com.personalfinance.api.domain.category.Category;
+import com.personalfinance.api.domain.category.dto.CategoryDTO;
 import com.personalfinance.api.domain.transaction.TransactionType;
 
 public interface CategoryRepositoryFacade {
@@ -11,12 +12,14 @@ public interface CategoryRepositoryFacade {
 
 	boolean categoryExists(String categoryId, String userId);
 
-	void deleteCategory(Category category);
+	void deleteCategory(String categoryId, String userId);
 
-	List<Category> getCategories(String userId);
+	List<CategoryDTO> getCategories(String userId);
 
-	Category getCategory(String id, String userId);
+	CategoryDTO getCategory(String id, String userId);
 
-	Category saveCategory(Category category);
+	CategoryDTO saveCategory(Category category);
+
+	CategoryDTO updateCategory(CategoryDTO category);
 
 }
