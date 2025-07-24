@@ -37,7 +37,7 @@ public class Category implements Serializable {
 
 	private UUID userId;
 
-	@Column(nullable = false, unique = true)
+	@Column(nullable = false)
 	private String name;
 
 	private TransactionType transactionType;
