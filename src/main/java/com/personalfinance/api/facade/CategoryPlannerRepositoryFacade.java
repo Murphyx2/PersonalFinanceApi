@@ -3,6 +3,7 @@ package com.personalfinance.api.facade;
 import java.util.List;
 
 import com.personalfinance.api.domain.categoryplanner.CategoryPlanner;
+import com.personalfinance.api.domain.categoryplanner.dto.CategoryPlannerDTO;
 
 public interface CategoryPlannerRepositoryFacade {
 
@@ -10,12 +11,14 @@ public interface CategoryPlannerRepositoryFacade {
 
 	boolean categoryPlannerExists(String id, String userId);
 
-	void deleteCategoryPlanner(CategoryPlanner categoryPlanner);
+	void deleteCategoryPlanner(CategoryPlannerDTO categoryPlanner);
 
-	List<CategoryPlanner> getCategoriesPlanner(String budgetId, String userId);
+	List<CategoryPlannerDTO> getCategoriesPlanner(String budgetId, String userId);
 
-	CategoryPlanner getCategoryPlanner(String id, String userId);
+	CategoryPlannerDTO getCategoryPlanner(String id, String userId);
 
-	CategoryPlanner saveCategoryPlanner(CategoryPlanner categoryPlanner);
+	CategoryPlannerDTO saveCategoryPlanner(CategoryPlanner categoryPlanner);
+
+	CategoryPlannerDTO updateCategoryPlanner(CategoryPlannerDTO categoryPlanner);
 
 }

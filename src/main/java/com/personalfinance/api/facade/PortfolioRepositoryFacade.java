@@ -3,16 +3,19 @@ package com.personalfinance.api.facade;
 import java.util.List;
 
 import com.personalfinance.api.domain.portfolio.Portfolio;
+import com.personalfinance.api.domain.portfolio.dto.PortfolioDTO;
 
 public interface PortfolioRepositoryFacade {
 
-	boolean deletePortfolio(Portfolio portfolio);
+	boolean deletePortfolio(PortfolioDTO portfolio);
 
 	boolean existsPortfolio(String id, String userId);
 
-	List<Portfolio> getAllPortfolioByUserId(String userId);
+	List<PortfolioDTO> getAllPortfolioByUserId(String userId);
 
-	Portfolio getPortfolioByIdAndUserId(String id, String userId);
+	PortfolioDTO getPortfolioByIdAndUserId(String id, String userId);
 
-	Portfolio savePortfolio(Portfolio portfolio);
+	PortfolioDTO savePortfolio(Portfolio portfolio);
+
+	PortfolioDTO updatePortfolio(PortfolioDTO portfolio);
 }

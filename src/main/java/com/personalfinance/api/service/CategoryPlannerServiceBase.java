@@ -6,6 +6,7 @@ import com.personalfinance.api.domain.categoryplanner.input.GetCategoryPlannerRe
 import com.personalfinance.api.domain.categoryplanner.input.GetListCategoryPlannerRequest;
 import com.personalfinance.api.domain.categoryplanner.input.UpdateCategoryPlannerRequest;
 import com.personalfinance.api.domain.categoryplanner.output.CreateCategoryPlannerResponse;
+import com.personalfinance.api.domain.categoryplanner.output.DeleteCategoryPlannerResponse;
 import com.personalfinance.api.domain.categoryplanner.output.GetCategoryPlannerResponse;
 import com.personalfinance.api.domain.categoryplanner.output.GetListCategoryPlannerResponse;
 import com.personalfinance.api.domain.categoryplanner.output.UpdateCategoryPlannerResponse;
@@ -14,7 +15,7 @@ public interface CategoryPlannerServiceBase {
 
 	public CreateCategoryPlannerResponse createCategoryPlanner(CreateCategoryPlannerRequest request);
 
-	public void deleteCategoryPlanner(DeleteCategoryPlannerRequest request);
+	public DeleteCategoryPlannerResponse deleteCategoryPlanner(DeleteCategoryPlannerRequest request);
 
 	public GetCategoryPlannerResponse getCategoryPlanner(GetCategoryPlannerRequest request);
 

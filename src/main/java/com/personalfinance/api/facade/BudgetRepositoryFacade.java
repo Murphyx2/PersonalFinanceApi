@@ -3,6 +3,7 @@ package com.personalfinance.api.facade;
 import java.util.List;
 
 import com.personalfinance.api.domain.budget.Budget;
+import com.personalfinance.api.domain.budget.dto.BudgetDTO;
 
 public interface BudgetRepositoryFacade {
 
@@ -10,9 +11,11 @@ public interface BudgetRepositoryFacade {
 
 	void deleteBudget(String id, String userId);
 
-	Budget getBudgetByIdAndUserId(String id, String userId);
+	BudgetDTO getBudgetByIdAndUserId(String id, String userId);
 
-	List<Budget> getBudgetsByPortfolioIdAndUserId(String portfolioId, String userId);
+	List<BudgetDTO> getBudgetsByPortfolioIdAndUserId(String portfolioId, String userId);
 
-	Budget saveBudget(Budget budget);
+	BudgetDTO saveBudget(Budget budget);
+
+	BudgetDTO updateBudget(BudgetDTO budget);
 }
